@@ -1,8 +1,14 @@
+package hw3;
 import java.util;
-public class Zookeeper extends ZooInterface {
-        public static void main(String[] args) {
-            Enclosure animals = new Enclosure();
-            String employee = "Johnny";
-            return;
+public class Zookeeper implements HW3Interface { 
+    String id;   
+    public void Individual(String newName) {
+        id = newName;
+    }
+    public void Address(String newName) {
+        id = newName;
+    }
+    public void Specialty(String newName) {
+        id = newName;
     }
 }

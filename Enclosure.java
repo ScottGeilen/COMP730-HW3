@@ -1,15 +1,17 @@
+package hw3;
 import java.util;
-public class Enclosure extends ZooInterface {
-    String location = "A3";
-    String employee = "Johnny";
-    String enclosure_description = "This is an enclosure";
-    List<String> location_code = new ArrayList<String>() {{
-        add(location);
-        add(employee);
-        add(enclosure_description);
-    }};
-        public static void main(String[] args) {
-            Enclosure animals = new Enclosure();
-            System.out.println(animals.location_code);
+import java.util.Random;
+public class Enclosure {
+    public static void main (String arg[]) {
+        List<String> CapitalLC = new ArrayList<Integer>();
+        List<Integer> DigitLC = new ArrayList<Integer>();
+        CapitalLC.add("A", "B", "C");
+        DigitLC.add(1, 2, 3);
+        String Description = "Enclosure description";
+
+        // need Zookeeper class
+        Zookeeper();
+        // need AnimalsGroup class
+        AnimalGroup();
     }
 }
